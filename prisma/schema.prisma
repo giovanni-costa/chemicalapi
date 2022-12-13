@@ -12,6 +12,26 @@ datasource db {
 
 model chemicalSubstance {
   id Int @id @default(autoincrement())
-  name String @unique
+  chericId Int @unique
+  name String @unique  
   formula String
+  imageURL String
+  molWeight String?
+  normalBoilingT String?
+  normalFreezingT String?
+  triplePointT String?
+  triplePointP String?
+  criticalT String?
+  criticalP String?
+  criticalV String?
+  critialComp String?
+  accFactor String?
+  vaporPressure String?
+  heatCapGas String?
+  heatCapLiq String?
+  viscosityGas String?
+  viscosityLiq String?
+  thermalCondGas String?
+  thermalConsLiq String?
+  surfaceTension String?
 }
